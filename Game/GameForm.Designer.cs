@@ -30,6 +30,7 @@ namespace Game
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.TimerForAnimation = new System.Windows.Forms.Timer(this.components);
             this.TimerLabel = new System.Windows.Forms.Label();
@@ -88,8 +89,10 @@ namespace Game
             this.ClientSize = new System.Drawing.Size(1178, 989);
             this.Controls.Add(this.PointLabel);
             this.Controls.Add(this.TimerLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1194, 1028);
             this.Name = "GameForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра найди мем";
             this.Load += new System.EventHandler(this.GameForm_Load);
             this.ResumeLayout(false);

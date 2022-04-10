@@ -29,6 +29,7 @@ namespace Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.TextBoxPlayerName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ButtonStartGame = new System.Windows.Forms.Button();
@@ -102,9 +103,11 @@ namespace Game
             this.Controls.Add(this.ButtonStartGame);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBoxPlayerName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(550, 534);
             this.MinimumSize = new System.Drawing.Size(550, 534);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
             this.ResumeLayout(false);
             this.PerformLayout();

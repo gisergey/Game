@@ -29,6 +29,7 @@ namespace Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResultsForm));
             this.ResultsofGame = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ResultsofGame)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,9 @@ namespace Game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 473);
             this.Controls.Add(this.ResultsofGame);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ResultsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Результаты";
             this.Load += new System.EventHandler(this.ResultsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ResultsofGame)).EndInit();
